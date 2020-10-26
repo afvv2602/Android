@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">API Minimo</string>
+    <string name="bienvenidaP">Bienvenido a la aplicacion</string>
+    <string name="introP">Introduce un numero para saber todos sus numeros pares</string>
+    <string name="introNum">Introduce un numero</string>
+    <string name="btnP">Pares</string>
+    <string name="btnC">Clicks</string>
+    <string name="Pbtn">Pulsa el boton</string>
+    <string name="volver">Volver</string>
+    <string name="BnvP">Bienvenido a la seccion de numeros pares</string>
+    <string name="APPSuma">Suma</string>
+    <string name="sumaB">Introduce dos numeros para sumarlos</string>
+    <string name="suma1">Introduce un numero</string>
+    <string name="Resultados">Resultados</string>
+    <string name="att">Bienvenido pon tu nombre y  contraseña</string>
+    <string name="btnE">Entrar</string>
+    <string name="nb">Introduce tu nombre de usuario</string>
+    <string name="pass">Introduce tu contraseña</string>
+</resources>

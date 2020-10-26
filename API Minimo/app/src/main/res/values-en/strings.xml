@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Minimal API</string>
+    <string name="bienvenidaP">Welcome to my app</string>
+    <string name="introP">Introduce one number to know how many pairs numbers does it have</string>
+    <string name="introNum">Introduce one number</string>
+    <string name="btnP">Pairs</string>
+    <string name="btnC">Clicks</string>
+    <string name="Pbtn">Click the button</string>
+    <string name="volver">Return</string>
+    <string name="BnvP">Welcome to pair numbers section </string>
+    <string name="APPSuma">Plus</string>
+    <string name="sumaB">Introduce two numbers to add them </string>
+    <string name="suma1">Introduce one number</string>
+    <string name="Resultados">Result</string>
+    <string name="att">Welcome introduce your name and password</string>
+    <string name="btnE">Enter</string>
+    <string name="nb">Introduce your username</string>
+    <string name="pass">Introduce your password</string>
+</resources>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HolaMundo</string>
+    <string name="ejemploCadena">Mi primera cadena</string>
+    <string name="ejemplo">Who are you?</string>
+    <string name="PersonName">I´m Adrian</string>
+    <string name="aceptar">Aceptar</string>
+</resources>
