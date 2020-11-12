@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="133dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="306dp"
+        android:layout_marginBottom="666dp"
+        android:text="Relative Layout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.026"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <RelativeLayout
+        android:layout_width="409dp"
+        android:layout_height="663dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="66dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <EditText
+            android:id="@+id/Nombre"
+            android:layout_width="277dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="50dp"
+            android:layout_weight=""
+            android:text="Nombre" />
+
+        <EditText
+            android:id="@+id/Apellidos"
+            android:layout_width="277dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Nombre"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="-30dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="50dp"
+            android:text="Apellidos" />
+
+        <TextView
+            android:id="@+id/franja"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Apellidos"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="-30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="50dp"
+            android:text="Franja edad" />
+
+        <TextView
+            android:id="@+id/Estado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Apellidos"
+            android:layout_toRightOf="@id/franja"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="-30dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="50dp"
+            android:text="Estado Civil" />
+
+
+        <Spinner
+            android:id="@+id/SpinnerEdad"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/franja"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="-30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="50dp"
+            android:entries="@array/Edad" />
+
+        <Spinner
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Estado"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="-30dp"
+            android:layout_marginEnd="-20dp"
+            android:layout_marginBottom="50dp"
+            android:layout_toRightOf="@id/SpinnerEdad"
+            android:entries="@array/Estado" />
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
