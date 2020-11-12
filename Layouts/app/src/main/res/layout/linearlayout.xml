@@ -38,23 +38,19 @@
             android:layout_weight="0"
             android:paddingTop="50dp"
             android:text="Conectar"
-            android:textAlignment="center" />
-
+            android:textAlignment="center"/>
         <EditText
             android:id="@+id/Nombre"
             android:layout_width="277dp"
             android:layout_height="wrap_content"
             android:layout_margin="50dp"
             android:layout_marginTop="10dp"
-            android:layout_weight=""
             android:text="Correo" />
-
         <EditText
             android:id="@+id/Contrasena"
             android:layout_width="277dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
-            android:layout_weight=""
             android:text="Contraseña" />
 
         <Button

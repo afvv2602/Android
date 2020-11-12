@@ -11,15 +11,25 @@
         android:id="@+id/constraint"
         android:layout_width="409dp"
         android:layout_height="145dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="585dp"
         android:text="constraint"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/frame"
         android:layout_width="409dp"
         android:layout_height="145dp"
         android:text="frame"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="147dp" />
 
@@ -28,22 +38,32 @@
         android:layout_width="409dp"
         android:layout_height="145dp"
         android:text="linear"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="293dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.252" />
 
     <Button
         android:id="@+id/relative"
         android:layout_width="409dp"
         android:layout_height="145dp"
         android:text="relative"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="439dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.747" />
 
     <Button
         android:id="@+id/table"
         android:layout_width="409dp"
         android:layout_height="145dp"
         android:text="table"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="585dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.988" />
 </androidx.constraintlayout.widget.ConstraintLayout>

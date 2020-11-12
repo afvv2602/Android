@@ -56,33 +56,3 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 }
-class constraint extends AppCompatActivity{
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.constrainlayout);
-    }
-}
-class frame extends AppCompatActivity{
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.framelayout);
-    }
-}
-class table extends AppCompatActivity{
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.tablelayout);
-    }
-}
-class linear extends AppCompatActivity{
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.linearlayout);
-    }
-}
-class relative extends AppCompatActivity{
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.relativelayout);
-    }
-}
