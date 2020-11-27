@@ -23,6 +23,12 @@ public class MainActivity extends AppCompatActivity {
         RelativeLayout layout = (RelativeLayout) findViewById(R.id.layout);
         Pintado pintar = new Pintado(MainActivity.this);
         layout.addView(pintar);
+        pintar.setOnTouchListener((view, motionEvent) ->
+                {
+                    int corx = (int) motionEvent.getX();
+                    int cory = (int) motionEvent.getY();
+                    pintar.invalidate();return true;}
+        );
 
 
 
@@ -31,13 +37,6 @@ public class MainActivity extends AppCompatActivity {
     class Pintado extends View {
         public Pintado(Context context) {
             super(context);
-            pintado.setOnTouchListener((view, motionEvent) ->
-                    {
-                        corx = (int) motionEvent.getX();
-                        cory = (int) motionEvent.getY();
-                        pintado.invalidate();return true;}
-            );
-
         }
 
         protected void onDraw(Canvas canvas) {
@@ -45,9 +44,9 @@ public class MainActivity extends AppCompatActivity {
   //        pintarLineas(canvas);
 //          pintarCirculos(canvas);
  //         pintarOvalos(canvas);
- //         pintarPantalla(canvas);
+            pintarPantalla(canvas);
  //         pintarTexto(canvas);
-            pintarImagen(canvas);
+           // pintarImagen(canvas);
         }
 
         private void pintarImagen(Canvas canvas) {
