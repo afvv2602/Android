@@ -77,7 +77,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-
     public void web(View view) { // pagina web
         intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.palomafp.org/"));
         if (intent.resolveActivity(getPackageManager()) != null) {

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:background="@drawable/principal"
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="100px"
+            android:layout_marginTop="250px"
+            android:layout_marginRight="100px"
+            android:fontFamily="@font/neonoverdrive"
+            android:text="Buscaminas"
+            android:textAlignment="center"
+            android:textColor="#F5E6E8"
+            android:textSize="85sp" />
+
+
+        <Button
+            android:id="@+id/jugar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boton_rosa"
+            android:textColor="#ffffff"
+            android:layout_marginTop="200px"
+            android:layout_marginLeft="200px"
+            android:layout_marginRight="200px"
+            android:fontFamily="@font/neonavy"
+            android:text="Jugar" />
+
+        <Button
+            android:id="@+id/configuracion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200px"
+            android:background="@drawable/boton_rosa"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="200px"
+            android:layout_marginRight="200px"
+            android:fontFamily="@font/neonavy"
+            android:text="Configuracion" />
+
+        <Button
+            android:id="@+id/salir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200px"
+            android:layout_marginLeft="200px"
+            android:layout_marginRight="200px"
+            android:fontFamily="@font/neonavy"
+            android:textColor="#ffffff"
+            android:background="@drawable/boton_rosa"
+            android:text="Salir" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
