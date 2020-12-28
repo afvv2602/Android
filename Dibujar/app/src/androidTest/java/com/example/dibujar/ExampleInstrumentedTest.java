@@ -1,4 +1,4 @@
-package mi.app.dibujar;
+package com.example.dibujar;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("mi.app.dibujar", appContext.getPackageName());
+        assertEquals("com.example.dibujar", appContext.getPackageName());
     }
 }

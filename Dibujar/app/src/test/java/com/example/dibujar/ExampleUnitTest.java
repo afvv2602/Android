@@ -1,4 +1,4 @@
-package mi.app.dibujar;
+package com.example.dibujar;
 
 import org.junit.Test;
 

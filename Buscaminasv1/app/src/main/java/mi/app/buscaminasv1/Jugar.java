@@ -22,6 +22,14 @@ public class Jugar extends AppCompatActivity {
         Button medio = (Button) findViewById(R.id.medio);
         Button experto = (Button) findViewById(R.id.experto);
 
+        principante.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent comunicacion = new Intent(v.getContext(),Tablero.class);
+                startActivity(comunicacion);
+            }
+        });
+
 
 
 
