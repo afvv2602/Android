@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.principal);
 
         //Para ver si ceramos la aplicacion desde configuracion
         if (getIntent().getBooleanExtra("EXIT", false)) {
@@ -29,7 +29,6 @@ public class MainActivity extends AppCompatActivity {
         jugar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 Intent comunicacion = new Intent(v.getContext(),Jugar.class);
                 startActivity(comunicacion);
             }

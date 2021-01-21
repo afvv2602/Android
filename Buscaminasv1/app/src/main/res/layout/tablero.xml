@@ -5,56 +5,122 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <RelativeLayout
+    <View
+        android:id="@+id/principal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/margenA"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/margenAB"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/margenDcho"
+        android:layout_width="75dp"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <View
+        android:id="@+id/margenIzq"
+        android:layout_width="75dp"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/cronometro"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        app:layout_constraintBottom_toTopOf="@id/Tablero"
+        app:layout_constraintEnd_toStartOf="@+id/margenDcho"
+        app:layout_constraintStart_toEndOf="@id/margenIzq"
+        app:layout_constraintTop_toBottomOf="@id/margenA" />
+
+    <View
         android:id="@+id/Tablero"
-        android:layout_width="349dp"
-        android:layout_height="413dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="1dp"
-        android:background="@drawable/boton_azul_ig"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.661" />
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        app:layout_constraintTop_toBottomOf="@id/cronometro"
+        app:layout_constraintStart_toEndOf="@id/margenIzq"
+        app:layout_constraintEnd_toStartOf="@id/margenDcho"
+        app:layout_constraintBottom_toTopOf="@id/margenMenu"/>
 
-    <LinearLayout
-        android:layout_width="347dp"
-        android:layout_height="64dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="16dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Tablero"
-        app:layout_constraintVertical_bias="0.0">
+    <RelativeLayout
+        android:id="@+id/pintar"
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Tablero"
+        app:layout_constraintEnd_toEndOf="@+id/Tablero"
+        app:layout_constraintStart_toStartOf="@+id/Tablero"
+        app:layout_constraintTop_toTopOf="@id/Tablero">
 
-        <Button
-            android:id="@+id/volver"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="50px"
-            android:layout_weight="1"
-            android:background="@drawable/boton_rosa"
-            android:fontFamily="@font/neonavy"
-            android:text="Volver"
-            android:textColor="#ffffff" />
+    </RelativeLayout>
+    <View
+        android:id="@+id/margenMenu"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        app:layout_constraintEnd_toStartOf="@+id/margenDcho"
+        app:layout_constraintStart_toEndOf="@id/margenIzq"
+        app:layout_constraintTop_toBottomOf="@id/Tablero" />
 
-        <Button
-            android:id="@+id/reiniciar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="50px"
-            android:layout_weight="1"
-            android:background="@drawable/boton_rosa"
-            android:fontFamily="@font/neonavy"
-            android:text="Reiniciar"
-            android:textColor="#ffffff" />
-    </LinearLayout>
+    <View
+        android:id="@+id/BTNSalir"
+        android:layout_width="130dp"
+        android:layout_height="55dp"
+        app:layout_constraintBottom_toTopOf="@id/margenAB"
+        app:layout_constraintEnd_toStartOf="@+id/margenDcho"
+        app:layout_constraintStart_toEndOf="@id/BTNVolver"
+        app:layout_constraintTop_toBottomOf="@id/margenMenu" />
+
+    <Button
+        android:id="@+id/volver"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boton_rosa"
+        android:fontFamily="@font/neonavy"
+        android:text="volver"
+        app:layout_constraintBottom_toBottomOf="@+id/BTNVolver"
+        app:layout_constraintEnd_toEndOf="@+id/BTNVolver"
+        app:layout_constraintStart_toStartOf="@+id/BTNVolver"
+        app:layout_constraintTop_toTopOf="@id/BTNVolver" />
+
+    <View
+        android:id="@+id/BTNVolver"
+        android:layout_width="130dp"
+        android:layout_height="55dp"
+        app:layout_constraintBottom_toTopOf="@id/margenAB"
+        app:layout_constraintEnd_toStartOf="@+id/BTNSalir"
+        app:layout_constraintStart_toEndOf="@id/margenIzq"
+        app:layout_constraintTop_toBottomOf="@id/margenMenu" />
+
+    <Button
+        android:id="@+id/salir"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boton_rosa"
+        android:fontFamily="@font/neonavy"
+        android:text="Salir"
+        app:layout_constraintBottom_toBottomOf="@+id/BTNSalir"
+        app:layout_constraintEnd_toEndOf="@+id/BTNSalir"
+        app:layout_constraintStart_toStartOf="@+id/BTNSalir"
+        app:layout_constraintTop_toTopOf="@id/BTNSalir" />
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
