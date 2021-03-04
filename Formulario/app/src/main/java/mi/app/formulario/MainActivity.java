@@ -38,12 +38,9 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
 
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        Log.d(TAG, "onActivityResult: Entro en el activity");
         if(resultCode == RESULT_CANCELED) {
-            Log.d(TAG, "onActivityResult: Entro en el if");
             Toast.makeText(this, "Ha habido un error con los datos", Toast.LENGTH_SHORT).show();
         }else {
-            Log.d(TAG, "onActivityResult: Entro en el else");
             Toast.makeText(this, "Los datos son correctos", Toast.LENGTH_SHORT).show();
         }
     }

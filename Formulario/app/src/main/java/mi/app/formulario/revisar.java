@@ -39,7 +39,6 @@ public class revisar extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent comunicacion = new Intent(v.getContext(),MainActivity.class);
-                comunicacion.putExtra("intent","0");
                 setResult(RESULT_CANCELED,comunicacion);
                 finish();
             }
@@ -48,7 +47,6 @@ public class revisar extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent comunicacion = new Intent(v.getContext(),MainActivity.class);
-                comunicacion.putExtra("intent","1");
                 setResult(RESULT_OK, comunicacion);
                 finish();
             }
